@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+html {
+	scroll-behavior: smooth;
+  }
+
+/* Header */
+
+.header {
+	background: url(../images/hero-bg.jpg) no-repeat top center;
+}
+
+.container {
+	width: 100%;
+	max-width: 903px;
+	margin: 0 auto;
+}
+
+.main-logo {
+	display: block;
+	position: absolute;
+	top: 280px;
+	right: 50%;
+	transform: translateX(50%);
+}
+
+.header__title {
+	font-family: Lato, sans-serif;
+	font-size: 54px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	text-align: center;
+	max-width: 600px;
+	padding-top: 440px;
+	margin: auto;
+	margin-bottom: 45px;
+}
+
+.header__description {
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #fff;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 29px;
+	margin-bottom: 200px;
+}
+
+.icon-scroll {
+	display: inline-block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 23px;
+	height: 37px;
+	margin-bottom: 260px;
+}
+
+/* About Us */
+
+a {
+	scroll-behavior: smooth;
+}
+
+.about-us {
+	border-right: 2px solid #111;
+	border-bottom: 2px solid #111;
+	border-left: 2px solid #111;
+	margin-bottom: 125px;
+	
+
+}
+
+.about-us__title {
+	font-family: Lato, sans-serif;
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 65px;
+	position: relative;
+	color: #3c3c3c;
+	top: -15px;
+}
+
+
+.about-us__title::before,
+.about-us__title::after {
+	content: '';
+	height: 2px;
+	width: 240px;
+	background: #111;
+	position: absolute;
+	top: 15px;
+}
+
+.about-us__title::before {
+	left: 0;
+}
+
+.about-us__title::after {
+	right: 0;
+}
+
+.descriptioin {
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	text-align: center;
+	line-height: 2.4em;
+	margin-bottom: 30px;
+}
+
+/* Services */
+
+.services {
+	background: url(../images/services-bg.jpg) no-repeat top center;
+	color: #fff;
+}
+
+.services__title {
+	font-family: Lato, sans-serif;
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	top: -15px;
+	margin-bottom: 55px;
+}
+
+.services .container {
+	padding: 110px 0;
+}
+
+.services-text {
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+	margin-bottom: 100px;
+
+}
+
+
+.services__title::before,
+.services__title::after {
+	content: '';
+	height: 2px;
+	width: 240px;
+	background: #fff;
+	position: absolute;
+	top: 15px;
+}
+
+.services__title::before {
+	left: 0;
+}
+
+.services__title::after {
+	right: 0;
+}
+
+/* What we do */
+
+.what-we-do__title {
+	font-family: Lato, sans-serif;
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	top: -15px;
+	margin-bottom: 100px;
+	color: #3c3c3c;
+	top: -15;
+
+}
+
+.design__title,
+.development__title,
+.product-management__title {
+	font-family: Lato, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 35px;
+	color: #3c3c3c;
+}
+
+.development.development__title {
+	font-weight: 400;
+}
+
+.icon {
+	width: 84px;
+	height: 80px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	fill: #3c3c3c;
+}
+
+.design__description,
+.development__description,
+.product-management__description {
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	text-align: center;
+	line-height: 2.4em;
+	color: #3c3c3c;
+	margin-bottom: 105px;
+}
+
+.what-we-do {
+	margin-bottom: 110px;
+}
+
+.what-we-do__main {
+border-right: 2px solid #111;
+	border-bottom: 2px solid #111;
+	border-left: 2px solid #111;
+	position: relative;
+}
+
+.what-we-do__title::before,
+.what-we-do__title::after {
+	content: '';
+	height: 2px;
+	width: 240px;
+	background: #111;
+	position: absolute;
+	top: 15px;
+}
+
+.what-we-do__title::before {
+	left: 0;
+}
+
+.what-we-do__title::after {
+	right: 0;
+}
+
+/* Photos */
+
+.links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.links__bg {
+	width: 29%;
+	height: 235px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: .5%;
+}
+
+.links__bg--big {
+	width: 41%;
+}
+
+.links__img {
+	min-width: 100%;
+	min-height: 100%;
+	max-width: none;
+	transition: all 1s ease-in-out;
+}
+
+.links__title {
+	position: absolute;
+	font-family: Lato, sans-serif;
+	letter-spacing: .16em;
+	bottom: 35px;
+	left: 35px;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	color: #fff;
+}
+
+/* About us */
+
+.contact-us {
+	border-right: 2px solid #111;
+	border-bottom: 2px solid #111;
+	border-left: 2px solid #111;
+	margin-top: 135px;
+	margin-bottom: 65px;
+	color: #3c3c3c;
+
+}
+
+.contact-us__title {
+	font-family: Lato, sans-serif;
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 65px;
+	position: relative;
+	color: #3c3c3c;
+	top: -15px;
+}
+
+
+.contact-us__title::before,
+.contact-us__title::after {
+	content: '';
+	height: 2px;
+	width: 240px;
+	background: #111;
+	position: absolute;
+	top: 15px;
+}
+
+.contact-us__title::before {
+	left: 0;
+}
+
+.contact-us__title::after {
+	right: 0;
+}
+
+.contact-us__button {
+	display: flex;
+	margin: 0 auto;
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	background: #3c3c3c;
+	padding: 20px 135px;
+	margin-bottom: 45px;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.contact-us__button:active {
+	transform: scale(.99);
+	background: #696969;
+}
+
+/* Footer */
+
+.footer {
+	display: inline-block;
+	margin-bottom: 65px;
+	position: relative;
+
+}
+
+.footer__logo {
+	display: inline-block;
+	margin-left: 31%;
+	margin-right: 20px;
+}
+
+p.footer {
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	color: #3c3c3c;
+	/* position: absolute; */
+	bottom: 13px;
+}
