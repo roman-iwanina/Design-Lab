@@ -90,10 +90,6 @@ html {
 
 /* About Us */
 
-a {
-	scroll-behavior: smooth;
-}
-
 .about-us {
 	border-right: 2px solid #111;
 	border-bottom: 2px solid #111;
